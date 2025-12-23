@@ -1,78 +1,336 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Abhishek Choubey | Digital Marketing Strategist</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Choubey | Digital Marketing Strategist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
 </head>
+<body class="bg-slate-50 text-slate-900 transition-colors duration-300 dark:bg-slate-950 dark:text-slate-50">
 
-<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-extrabold tracking-tighter text-blue-600 dark:text-blue-400">
+                        AC<span class="text-slate-900 dark:text-slate-100">.</span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#experience" class="text-sm font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Experience</a>
+                    <a href="#skills" class="text-sm font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Skills</a>
+                    <a href="#projects" class="text-sm font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Projects</a>
+                    <a href="#contact" class="text-sm font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</a>
+                    <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+                        <i data-lucide="moon" class="w-5 h-5 dark:hidden"></i>
+                        <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+                    </button>
+                    <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg shadow-blue-500/25">
+                        Consult Now
+                    </a>
+                </div>
 
-<header class="hero">
-  <button id="themeToggle">🌙</button>
-  <h1>Abhishek Choubey</h1>
-  <h2>Digital Marketing Strategist | Performance Marketing & Client Solutions</h2>
-</header>
+                <div class="md:hidden flex items-center space-x-4">
+                    <button id="mobile-theme-toggle" class="p-2 rounded-full">
+                        <i data-lucide="moon" class="w-5 h-5 dark:hidden"></i>
+                        <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+                    </button>
+                    <button id="menu-toggle" class="p-2">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
 
-<nav>
-  <a href="#summary">Summary</a>
-  <a href="#skills">Skills</a>
-  <a href="#experience">Experience</a>
-  <a href="#projects">Projects</a>
-  <a href="#certifications">Certifications</a>
-  <a href="#contact">Contact</a>
-</nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden absolute w-full glass transition-all duration-300 overflow-hidden max-h-0">
+            <div class="px-4 pt-2 pb-6 space-y-2 text-center">
+                <a href="#experience" class="block px-3 py-4 text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg">Experience</a>
+                <a href="#skills" class="block px-3 py-4 text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg">Skills</a>
+                <a href="#projects" class="block px-3 py-4 text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg">Projects</a>
+                <a href="#contact" class="block px-3 py-4 text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-<main>
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 md:pt-48 md:pb-40 overflow-hidden relative">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[700px] bg-blue-100 dark:bg-blue-900/10 blur-[150px] rounded-full -z-10 opacity-50"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs font-bold mb-8 animate-fade-in">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                    </span>
+                    <span>BASED IN BHOPAL, READY FOR REMOTE</span>
+                </div>
+                <h1 class="text-5xl md:text-8xl font-black tracking-tight mb-8 leading-[1.1] animate-fade-in">
+                    Digital Marketing <span class="text-blue-600 block md:inline">Strategist.</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-600 dark:text-slate-400 mb-12 leading-relaxed max-w-2xl animate-fade-in" style="animation-delay: 0.1s">
+                    I'm <span class="text-slate-900 dark:text-white font-bold">Abhishek Choubey</span>. I help brands scale with data-driven advertising, GA4 measurement frameworks, and performance-led media strategies.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-5 animate-fade-in" style="animation-delay: 0.2s">
+                    <a href="#contact" class="flex items-center justify-center space-x-3 bg-blue-600 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-blue-700 transition-all hover:shadow-2xl shadow-blue-500/30 group">
+                        <span>Work With Me</span>
+                        <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/abhishek-choubey-7a4b53146" target="_blank" class="flex items-center justify-center space-x-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-all">
+                        <i data-lucide="linkedin" class="w-6 h-6 text-blue-600"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+                
+                <div class="mt-20 flex flex-wrap items-center gap-12 opacity-70 animate-fade-in" style="animation-delay: 0.3s">
+                    <div>
+                        <div class="text-3xl font-black text-slate-900 dark:text-white">2+</div>
+                        <div class="text-[10px] uppercase tracking-[0.2em] font-bold">Years Experience</div>
+                    </div>
+                    <div class="w-px h-10 bg-slate-300 dark:bg-slate-700 hidden sm:block"></div>
+                    <div>
+                        <div class="text-3xl font-black text-slate-900 dark:text-white">40%</div>
+                        <div class="text-[10px] uppercase tracking-[0.2em] font-bold">Conversion Growth</div>
+                    </div>
+                    <div class="w-px h-10 bg-slate-300 dark:bg-slate-700 hidden sm:block"></div>
+                    <div>
+                        <div class="text-3xl font-black text-slate-900 dark:text-white">10K+</div>
+                        <div class="text-[10px] uppercase tracking-[0.2em] font-bold">Subscriber Network</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="summary" class="section">
-  <h3>Professional Summary</h3>
-  <p>
-    Digital Marketing Strategist with 2+ years of experience delivering data-driven
-    advertising and client growth solutions across finance, education, and service-based
-    businesses.
-  </p>
-</section>
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 bg-white dark:bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-20">
+                <h2 class="text-sm font-bold tracking-[0.3em] text-blue-600 dark:text-blue-400 uppercase mb-4">Background</h2>
+                <p class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white tracking-tight">Professional Journey</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-12 gap-12" id="experience-container">
+                <!-- Injected via script.js -->
+            </div>
+        </div>
+    </section>
 
-<section id="skills" class="section alt">
-  <h3>Core Skills</h3>
-  <ul>
-    <li>Google Ads, Meta Ads, LinkedIn Ads</li>
-    <li>GA4, Conversion Tracking, ROI Analysis</li>
-    <li>SEO, Funnels, A/B Testing</li>
-  </ul>
-</section>
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-slate-50 dark:bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-20 text-center">
+                <h2 class="text-sm font-bold tracking-[0.3em] text-blue-600 dark:text-blue-400 uppercase mb-4">Stack</h2>
+                <p class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white tracking-tight">Core Competencies</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Skill Card 1 -->
+                <div class="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all">
+                    <div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center rounded-2xl mb-8">
+                        <i data-lucide="megaphone" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Paid Media</h3>
+                    <ul class="space-y-3 text-slate-500 text-sm">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> Google Ads (Search/PMax)</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> Meta/FB Ads</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> LinkedIn Advertising</li>
+                    </ul>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all">
+                    <div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center rounded-2xl mb-8">
+                        <i data-lucide="bar-chart-3" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Measurement</h3>
+                    <ul class="space-y-3 text-slate-500 text-sm">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> GA4 Implementation</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> Conversion Tracking</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> ROI Attribution</li>
+                    </ul>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all">
+                    <div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center rounded-2xl mb-8">
+                        <i data-lucide="target" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Growth Strategy</h3>
+                    <ul class="space-y-3 text-slate-500 text-sm">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> Funnel Architecture</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> Lead Generation</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> A/B Testing</li>
+                    </ul>
+                </div>
+                <!-- Skill Card 4 -->
+                <div class="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all">
+                    <div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center rounded-2xl mb-8">
+                        <i data-lucide="layout" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Operations</h3>
+                    <ul class="space-y-3 text-slate-500 text-sm">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> SEO Optimization</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> Content Frameworks</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> Client Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="experience" class="section">
-  <h3>Experience</h3>
-  <p><strong>Arts of Finance</strong> — Digital Marketing Manager</p>
-</section>
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-white dark:bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-20">
+                <h2 class="text-sm font-bold tracking-[0.3em] text-blue-600 dark:text-blue-400 uppercase mb-4">Impact</h2>
+                <p class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white tracking-tight">Case Studies</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="group relative overflow-hidden rounded-[2.5rem] bg-blue-600 p-10 min-h-[450px] flex flex-col justify-end">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-indigo-800 opacity-90 transition-transform duration-500 group-hover:scale-105"></div>
+                    <div class="absolute top-10 right-10 opacity-20"><i data-lucide="globe" class="w-24 h-24 text-white"></i></div>
+                    <div class="relative z-20">
+                        <span class="text-blue-200 text-xs font-black uppercase tracking-widest mb-4 block">Fintech Growth</span>
+                        <h3 class="text-3xl font-black text-white mb-4">Finstocks Education</h3>
+                        <p class="text-blue-100 text-sm mb-8 leading-relaxed">Scaling organic traffic and implementing SEO frameworks for a premiere finance institute.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-white/10 text-white text-[10px] font-bold rounded-lg uppercase tracking-tighter">SEO</span>
+                            <span class="px-3 py-1 bg-white/10 text-white text-[10px] font-bold rounded-lg uppercase tracking-tighter">Web Dev</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="group relative overflow-hidden rounded-[2.5rem] bg-indigo-600 p-10 min-h-[450px] flex flex-col justify-end">
+                    <div class="absolute inset-0 bg-gradient-to-br from-indigo-500 to-purple-800 opacity-90 transition-transform duration-500 group-hover:scale-105"></div>
+                    <div class="absolute top-10 right-10 opacity-20"><i data-lucide="trending-up" class="w-24 h-24 text-white"></i></div>
+                    <div class="relative z-20">
+                        <span class="text-indigo-200 text-xs font-black uppercase tracking-widest mb-4 block">Performance Marketing</span>
+                        <h3 class="text-3xl font-black text-white mb-4">FinArts Research</h3>
+                        <p class="text-indigo-100 text-sm mb-8 leading-relaxed">Driving 40% increase in qualified leads using high-intent Google Search and PMax campaigns.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-white/10 text-white text-[10px] font-bold rounded-lg uppercase tracking-tighter">Google Ads</span>
+                            <span class="px-3 py-1 bg-white/10 text-white text-[10px] font-bold rounded-lg uppercase tracking-tighter">PMax</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="group relative overflow-hidden rounded-[2.5rem] bg-slate-900 p-10 min-h-[450px] flex flex-col justify-end">
+                    <div class="absolute inset-0 bg-gradient-to-br from-slate-700 to-slate-900 opacity-90 transition-transform duration-500 group-hover:scale-105"></div>
+                    <div class="absolute top-10 right-10 opacity-20"><i data-lucide="users" class="w-24 h-24 text-white"></i></div>
+                    <div class="relative z-20">
+                        <span class="text-slate-300 text-xs font-black uppercase tracking-widest mb-4 block">Audience Building</span>
+                        <h3 class="text-3xl font-black text-white mb-4">Instastrategix</h3>
+                        <p class="text-slate-300 text-sm mb-8 leading-relaxed">Built and scaled an organic community to 10k+ subscribers through content strategy.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-white/10 text-white text-[10px] font-bold rounded-lg uppercase tracking-tighter">Content</span>
+                            <span class="px-3 py-1 bg-white/10 text-white text-[10px] font-bold rounded-lg uppercase tracking-tighter">Monetization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="projects" class="section alt">
-  <h3>Projects</h3>
-  <p>Finstocks Education, FinArts Research</p>
-</section>
+    <!-- Credentials Section -->
+    <section class="py-24 bg-slate-50 dark:bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16 text-center">
+                <h2 class="text-sm font-bold tracking-[0.3em] text-blue-600 dark:text-blue-400 uppercase mb-4">Verification</h2>
+                <p class="text-4xl font-black tracking-tight">Certifications</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="certifications-list">
+                <!-- Injected via script.js -->
+            </div>
+        </div>
+    </section>
 
-<section id="certifications" class="section">
-  <h3>Certifications</h3>
-  <p>Google Ads, HubSpot, Semrush</p>
-</section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-blue-600 text-white overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-white/10 blur-[120px] rounded-full translate-x-1/2 -translate-y-1/2"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-20 max-w-3xl mx-auto">
+                <h2 class="text-sm font-bold tracking-[0.3em] text-blue-200 uppercase mb-4">Connect</h2>
+                <p class="text-5xl md:text-6xl font-black mb-8 tracking-tight">Let's grow your brand.</p>
+                <p class="text-xl text-blue-100 leading-relaxed">
+                    I am currently accepting new consultation requests and high-impact digital projects. Connect with me directly through these channels.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <a href="mailto:abhishekchoubey312@gmail.com" class="group flex flex-col items-center p-12 bg-white/10 hover:bg-white/20 border border-white/20 rounded-[3rem] transition-all hover:-translate-y-2">
+                    <div class="w-20 h-20 bg-white text-blue-600 flex items-center justify-center rounded-[1.5rem] mb-8 group-hover:scale-110 transition-transform">
+                        <i data-lucide="mail" class="w-10 h-10"></i>
+                    </div>
+                    <span class="text-[10px] font-black uppercase tracking-[0.3em] text-blue-200 mb-2">Direct Email</span>
+                    <span class="text-lg font-bold">Email Abhishek</span>
+                </a>
+                <a href="https://linkedin.com/in/abhishek-choubey-7a4b53146" target="_blank" class="group flex flex-col items-center p-12 bg-white/10 hover:bg-white/20 border border-white/20 rounded-[3rem] transition-all hover:-translate-y-2">
+                    <div class="w-20 h-20 bg-white text-blue-600 flex items-center justify-center rounded-[1.5rem] mb-8 group-hover:scale-110 transition-transform">
+                        <i data-lucide="linkedin" class="w-10 h-10"></i>
+                    </div>
+                    <span class="text-[10px] font-black uppercase tracking-[0.3em] text-blue-200 mb-2">LinkedIn</span>
+                    <span class="text-lg font-bold">Professional Profile</span>
+                </a>
+                <a href="https://instagram.com/instaStrategix" target="_blank" class="group flex flex-col items-center p-12 bg-white/10 hover:bg-white/20 border border-white/20 rounded-[3rem] transition-all hover:-translate-y-2">
+                    <div class="w-20 h-20 bg-white text-blue-600 flex items-center justify-center rounded-[1.5rem] mb-8 group-hover:scale-110 transition-transform">
+                        <i data-lucide="instagram" class="w-10 h-10"></i>
+                    </div>
+                    <span class="text-[10px] font-black uppercase tracking-[0.3em] text-blue-200 mb-2">Instagram</span>
+                    <span class="text-lg font-bold">@instaStrategix</span>
+                </a>
+            </div>
+            
+            <div class="mt-24 text-center">
+                <a href="https://instastrategix0.blogspot.com" target="_blank" class="inline-flex items-center space-x-3 text-blue-100 hover:text-white transition-all font-bold text-lg border-b-2 border-blue-400 pb-2">
+                    <i data-lucide="globe" class="w-5 h-5"></i>
+                    <span>Visit Business Platform</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
-<section id="contact" class="section alt">
-  <h3>Contact</h3>
-  <p>Email: abhishekchoubey312@gmail.com</p>
-  <p>Instagram: @instaStrategix</p>
-</section>
+    <!-- Footer -->
+    <footer class="py-16 bg-slate-950 text-slate-500 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div>
+                    <div class="text-2xl font-black text-white tracking-tighter mb-2">
+                        AC<span class="text-blue-500">.</span>
+                    </div>
+                    <p class="text-xs uppercase font-bold tracking-widest opacity-40">Abhishek Choubey Portfolio &copy; 2025</p>
+                </div>
+                <div class="flex space-x-8 text-sm font-bold uppercase tracking-widest">
+                    <a href="#experience" class="hover:text-white transition-colors">Experience</a>
+                    <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+                    <a href="#projects" class="hover:text-white transition-colors">Contact</a>
+                </div>
+                <div class="text-xs text-center md:text-right">
+                    Built for Performance & ROI<br>
+                    <span class="opacity-30">Powered by Static Vanilla Stack</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-</main>
-
-<footer>
-  <p>© 2025 Abhishek Choubey</p>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
