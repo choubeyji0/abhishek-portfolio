@@ -3,171 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhishek Choubey | Digital Marketing Portfolio</title>
+  <title>Abhishek Choubey | Digital Marketing Strategist</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
 
+<!-- Navbar -->
 <header>
-  <div class="container header-container">
+  <nav class="navbar">
     <div class="logo">Abhishek Choubey</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div id="theme-toggle">🌙</div>
-    </nav>
-  </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button id="theme-toggle">🌙</button></li>
+    </ul>
+  </nav>
 </header>
 
-<section id="about" class="hero section">
-  <div class="container hero-container">
-    <div class="hero-left">
-      <h1>Abhishek Choubey</h1>
-      <p class="subtitle">Digital Marketing Strategist | Performance Marketing & Client Solutions</p>
-      <p>Email: <a href="mailto:abhishekchoubey312@gmail.com">abhishekchoubey312@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/abhishek-choubey-7a4b53146" target="_blank">View Profile</a></p>
-      <div class="contact-buttons">
-        <a href="mailto:abhishekchoubey312@gmail.com" class="btn">Email Me</a>
-        <a href="https://linkedin.com/in/abhishek-choubey-7a4b53146" class="btn btn-outline" target="_blank">LinkedIn</a>
-      </div>
-    </div>
-    <div class="hero-right">
-      <img src="images/profile.jpg" alt="Abhishek Choubey">
-    </div>
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Hi, I'm Abhishek Choubey</h1>
+    <p>Digital Marketing Strategist | Performance Marketing & Client Solutions</p>
+    <a href="#contact" class="btn">Hire Me</a>
   </div>
 </section>
 
-<section class="section summary">
-  <div class="container">
-    <h2>Professional Summary</h2>
-    <p>
-      Digital Marketing Strategist with 2+ years of experience delivering data-driven advertising and client growth solutions across finance, education, and service-based businesses. Proven ability to translate business objectives into scalable digital media strategies, optimize campaign performance through analytics and experimentation, and partner with stakeholders to drive measurable outcomes.
-    </p>
-    <p>
-      Hands-on expertise in Google Ads, measurement frameworks, SEO, and multi-channel campaign optimization, with a strong analytical mindset and customer-first approach aligned to Google’s advertising and gTech ecosystem.
-    </p>
-  </div>
-</section>
-
-<section id="skills" class="section skills">
-  <div class="container">
-    <h2>Core Skills & Capabilities</h2>
-    <div class="grid">
-      <div class="skill-card">
-        <h3>Digital Advertising</h3>
-        <p>Google Ads (Search, Display, Performance Max, AI-powered Shopping), Meta & LinkedIn Ads, Campaign Structuring, Optimization & Scaling</p>
-      </div>
-      <div class="skill-card">
-        <h3>Analytics & Reporting</h3>
-        <p>GA4, Conversion Tracking, Attribution, ROI Analysis, Performance Reporting, Executive Insights</p>
-      </div>
-      <div class="skill-card">
-        <h3>Client & Stakeholder Management</h3>
-        <p>Client Needs Discovery, Solution Design, Account Optimization & Growth Consulting, Cross-functional Collaboration</p>
-      </div>
-      <div class="skill-card">
-        <h3>Strategy & Execution</h3>
-        <p>Multi-channel Marketing Strategy, Funnel Optimization, Lead Generation, A/B Testing, Continuous Improvement</p>
+<!-- About Section -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about-container">
+    <img src="images/profile.jpg" alt="Abhishek Choubey">
+    <div class="about-text">
+      <p>Digital Marketing Strategist with 2+ years of experience delivering data-driven advertising and client growth solutions across finance, education, and service-based businesses.</p>
+      <p>Hands-on expertise in Google Ads, SEO, multi-channel campaigns, analytics, and client-focused digital strategy aligned with Google’s gTech ecosystem.</p>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:abhishekchoubey312@gmail.com">abhishekchoubey312@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/abhishek-choubey-7a4b53146" target="_blank">linkedin.com/in/abhishek-choubey-7a4b53146</a></p>
+        <p>Instagram: <a href="https://instagram.com/instaStrategix" target="_blank">@instaStrategix</a></p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="experience" class="section experience">
-  <div class="container">
-    <h2>Professional Experience</h2>
+<!-- Skills Section -->
+<section id="skills">
+  <h2>Core Skills</h2>
+  <div class="skills-container">
+    <div class="skill">Google Ads</div>
+    <div class="skill">Meta & LinkedIn Ads</div>
+    <div class="skill">Campaign Optimization</div>
+    <div class="skill">Analytics & GA4</div>
+    <div class="skill">SEO & Content Marketing</div>
+    <div class="skill">Strategy & Execution</div>
+  </div>
+</section>
 
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>Digital Marketing Manager – Arts of Finance</h3>
-        <span>Aug 2024 – Dec 2025</span>
-        <ul>
-          <li>40% increase in lead conversion via multi-channel campaigns</li>
-          <li>35% ROI improvement through ad optimization</li>
-          <li>60% organic traffic growth via SEO & content optimization</li>
-        </ul>
-      </div>
-      <div class="timeline-item">
-        <h3>Digital Marketing Intern – Regalia Marketing</h3>
-        <span>Apr 2024 – Jun 2024</span>
-        <ul>
-          <li>30% increase in conversions, 20% CTR improvement</li>
-          <li>18% reduction in CPL through bid & audience optimization</li>
-        </ul>
-      </div>
-      <div class="timeline-item">
-        <h3>Social Media Manager Intern – Hive Ads Media</h3>
-        <span>Dec 2023 – Feb 2024</span>
-        <ul>
-          <li>80% engagement growth, 35% improved post interactions</li>
-          <li>22% reduced customer acquisition cost</li>
-        </ul>
-      </div>
-      <div class="timeline-item">
-        <h3>Founder & Digital Strategist – Instastrategix</h3>
-        <span>2019 – 2022</span>
-        <ul>
-          <li>50% organic traffic growth, 30% revenue increase</li>
-          <li>10,000+ email subscribers via funnel optimization</li>
-        </ul>
-      </div>
+<!-- Experience Section -->
+<section id="experience">
+  <h2>Professional Experience</h2>
+  <div class="experience-container">
+    <div class="experience-card">
+      <h3>Digital Marketing Manager</h3>
+      <p>Arts of Finance | Aug 2024 – Dec 2025</p>
+      <ul>
+        <li>Designed multi-channel campaigns, increasing lead conversion by 40%.</li>
+        <li>Managed paid media budgets, improving ROI by 35%.</li>
+        <li>Implemented SEO frameworks, boosting organic traffic by 60%.</li>
+      </ul>
+    </div>
+    <div class="experience-card">
+      <h3>Digital Marketing Intern</h3>
+      <p>Regalia Marketing | Apr 2024 – Jun 2024</p>
+      <ul>
+        <li>Improved conversion performance by 30% and CTR by 20%.</li>
+        <li>Reduced CPL by 18% through audience refinement.</li>
+      </ul>
+    </div>
+    <div class="experience-card">
+      <h3>Social Media Manager Intern</h3>
+      <p>Hive Ads Media | Dec 2023 – Feb 2024</p>
+      <ul>
+        <li>Increased engagement by 80% and post interactions by 35%.</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<section id="projects" class="section projects">
-  <div class="container">
-    <h2>Selected Projects & Client Work</h2>
-    <ul class="projects-list">
-      <li><a href="https://finstockseducation.com/" target="_blank">Finstocks Education Website</a></li>
-      <li><a href="https://finartsresearch.com/" target="_blank">FinArts Research Website</a></li>
-      <li>Brochures, Premium Course Decks, Workshop Presentations</li>
-      <li>Instagram Strategy & Content Creation – Instastrategix</li>
-    </ul>
+<!-- Projects Section -->
+<section id="projects">
+  <h2>Selected Projects</h2>
+  <div class="projects-container">
+    <div class="project-card">
+      <h3>Website Development & Optimization</h3>
+      <p>Finstocks Education, FinArts Research</p>
+    </div>
+    <div class="project-card">
+      <h3>Marketing & Sales Enablement</h3>
+      <p>Brochures, course decks, and presentations for finance brands</p>
+    </div>
+    <div class="project-card">
+      <h3>Brand & Social Media Growth</h3>
+      <p>Instagram strategy and asset creation for Instastrategix</p>
+    </div>
   </div>
 </section>
 
-<section id="education" class="section education">
-  <div class="container">
-    <h2>Education</h2>
-    <p>Bachelor of Technology (B.Tech), Computer Science – RGPV University, Bhopal | 2022 – 2025</p>
-  </div>
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form action="mailto:abhishekchoubey312@gmail.com" method="post" enctype="text/plain" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 </section>
 
-<section id="certifications" class="section certifications">
-  <div class="container">
-    <h2>Certifications</h2>
-    <ul>
-      <li><a href="https://skillshop.credential.net/8b999e3c-6c52-463c-9e87-e639b58b9653" target="_blank">Google Ads – Measurement Certification</a></li>
-      <li><a href="https://skillshop.credential.net/c7860ceb-fac8-4434-af65-4f491d8af9c4#acc.j8hFeHPl" target="_blank">AI-Powered Shopping Ads Certification</a></li>
-      <li><a href="https://app.hubspot.com/academy/achievements/w24zndhh/en/1/abhishek-choubey/digital-marketing" target="_blank">HubSpot Digital Marketing Certification</a></li>
-      <li><a href="https://static.semrush.com/academy/certificates/4d327ee07f/abhishek-choubey_25.pdf" target="_blank">Semrush SEO & Digital Advertising Certifications</a></li>
-      <li><a href="https://static.semrush.com/academy/certificates/2d23567653/abhishek-choubey_1.pdf" target="_blank">How to Craft High-Impact Digital Advertising Campaigns Using Semrush</a></li>
-      <li><a href="https://static.semrush.com/academy/certificates/4cb5d365b1/abhishek-choubey_25.pdf" target="_blank">Getting Started with Semrush</a></li>
-    </ul>
-  </div>
-</section>
-
-<section id="contact" class="section contact">
-  <div class="container">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:abhishekchoubey312@gmail.com">abhishekchoubey312@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/abhishek-choubey-7a4b53146" target="_blank">View Profile</a></p>
-    <p>Instagram: @instaStrategix</p>
-    <p>Website: <a href="https://instastrategix0.blogspot.com" target="_blank">instastrategix0.blogspot.com</a></p>
-  </div>
-</section>
-
+<!-- Footer -->
 <footer>
-  <p>© 2025 Abhishek Choubey</p>
+  <p>&copy; 2025 Abhishek Choubey | All Rights Reserved</p>
 </footer>
 
 <script src="js/script.js"></script>
